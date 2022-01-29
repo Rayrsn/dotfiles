@@ -34,7 +34,7 @@ function fishconfig_install() {
 }
 
 # if argument noconfirm or nc is passed, run without asking else ask
-if [ "$1" = "--no-confirm" ] || [ "$1" = "-nc" ]; then
+if [ "$1" = "--noconfirm" ] || [ "$1" = "-nc" ]; then
     fisher_install
     omf_install
     fishconfig_install

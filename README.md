@@ -4,4 +4,4 @@
 2. Fish
 
 # Installation
-For installing fish and the configs see [Fish](./.config/fish)
+For installing fish and the configs see [Fish](./fish)

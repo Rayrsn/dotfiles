@@ -30,6 +30,7 @@ function omf_install() {
 
 # function for installing fish configs
 function fishconfig_install() {
+    mkdir -p ~/.config/fish/
     cp . ~/.config/fish/
 }
 

@@ -49,7 +49,7 @@ function fishconfig_install() {
     fi
     mkdir -p ~/.config/fish/
     cp -r . ~/.config/fish/
-    rm ~/.config/fish/functions/_*
+    rm ~/.config/fish/functions/_t*
     rm ~/.config/fish/functions/*prompt*
 }
 

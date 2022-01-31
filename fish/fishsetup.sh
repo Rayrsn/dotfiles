@@ -6,6 +6,8 @@ if [ "$(uname)" = "Linux" ]; then
     if [ "$(cat /etc/os-release | grep ID_LIKE)" = "ID_LIKE=ubuntu" ]; then
     echo "Current distro is Ubuntu/Ubuntu Based"
     echo "Installing Fish..."
+    sudo apt-add-repository ppa:fish-shell/release-3 -y
+    sudo apt-get update -y
     sudo apt install fish -y
     
     fi
@@ -51,6 +53,7 @@ function fishconfig_install() {
     cp -r . ~/.config/fish/
     rm ~/.config/fish/functions/_t*
     rm ~/.config/fish/functions/*prompt*
+    rm ~/.config/fish/fish_title
 }
 
 # if argument noconfirm or nc is passed, run without asking else ask

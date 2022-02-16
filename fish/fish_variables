@@ -217,7 +217,6 @@ SETUVAR tide_node_color:000000
 SETUVAR tide_node_icon:\u2b22
 SETUVAR tide_os_bg_color:CED7CF
 SETUVAR tide_os_color:080808
-SETUVAR tide_os_icon:\uf303
 SETUVAR tide_php_bg_color:617CBE
 SETUVAR tide_php_color:000000
 SETUVAR tide_php_icon:\ue608

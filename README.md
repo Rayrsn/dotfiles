@@ -9,5 +9,5 @@
 * For installing Awesome and the configs see [Awesome](./Awesome)
   * Packages that get installed:
     * Arch : `git` `lightdm` `feh` `vicious` `awesome` `nitrogen` `alacritty` `dmenu` `rofi` `pcmanfm`
-    * Ubuntu: The same packages as arch plus `awesome-extra` `ttf-bitstream-vera` `fonts-dejavu` `fonts-hack-ttf` `fonts-inconsolata` `fonts-liberation` `fonts-roboto` `ttf-ubuntu-font-family`
+    * Ubuntu: The same packages as Arch plus `awesome-extra` `ttf-bitstream-vera` `fonts-dejavu` `fonts-hack-ttf` `fonts-inconsolata` `fonts-liberation` `fonts-roboto` `ttf-ubuntu-font-family`
     

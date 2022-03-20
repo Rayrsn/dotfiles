@@ -55,13 +55,6 @@ func_install() {
     sudo cp -r ./TTF/*.ttf /usr/share/fonts/adobe-source-sans-fonts
 
     cd /tmp
-    git clone https://github.com/googlefonts/noto-fonts
-    cd noto-fonts
-    sudo mkdir -p /usr/share/fonts/noto
-    sudo cp -r ./unhinted/ttf/Noto* /usr/share/fonts/noto
-    sudo cp -r ./hinted/ttf/Noto* /usr/share/fonts/noto
-
-    cd /tmp
     curl "https://sources.archlinux.org/other/community/ttf-droid/ttf-droid-20121017.tar.xz" -o "ttf-droid-20121017.tar.xz"
     tar -xf ttf-droid-20121017.tar.xz
     cd google-droid-fonts-20121017
@@ -75,7 +68,7 @@ func_install() {
     sudo mkdir -p /usr/share/fonts/misc
     sudo cp -r ./*.pcf /usr/share/fonts/misc
 
-    sudo apt install ttf-bitstream-vera fonts-dejavu fonts-hack-ttf fonts-inconsolata fonts-liberation fonts-roboto ttf-ubuntu-font-family -y
+    sudo apt install ttf-bitstream-vera fonts-noto fonts-dejavu fonts-hack-ttf fonts-inconsolata fonts-liberation fonts-roboto ttf-ubuntu-font-family -y
 
 
     elif [ "$(cat /etc/os-release | grep ID_LIKE)" = "ID_LIKE=arch" ]; then
@@ -125,7 +118,7 @@ ttf-roboto
 ttf-ubuntu-font-family
 tamsyn-font
 )
-
+if [ "$(cat /etc/os-release | grep ID_LIKE)" = "ID_LIKE=arch" ]; then
 count=0
 for name in "${list[@]}" ; do
 	count=$[count+1]
@@ -134,7 +127,7 @@ for name in "${list[@]}" ; do
 done
 
 ###############################################################################
-
+fi
 tput setaf 11;
 echo "################################################################"
 echo "Software has been installed"
@@ -164,3 +157,4 @@ then
     git clone https://github.com/arcolinux/arcolinux-wallpapers
     cd arcolinux-wallpapers
     sudo cp -r ./usr/* /usr/
+fi

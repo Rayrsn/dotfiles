@@ -141,7 +141,7 @@ sudo cp -r ./usr/* /usr/
 
 # Installing the configs
 cd /tmp
-git clone https://github.com/arcolinux/arcolinux-awesome
+git clone https://github.com/Rayrsn/arcolinux-awesome
 cd arcolinux-awesome
 mkdir -p ~/.config/awesome/rc/
 sudo cp -r ./etc/skel/.config/awesome/* ~/.config/awesome/

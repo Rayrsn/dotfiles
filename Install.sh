@@ -15,12 +15,10 @@
 
 # Only Install in Linux
 if [ "$(uname)" = "Linux" ]; then
-cd /tmp
-git clone https://github.com/Rayrsn/BetterDiscord-Files
-cd BetterDiscord-Files
-mkdir -p ~/.config/BetterDiscord/
-cp -r ./* ~/.config/BetterDiscord/
-else 
-    echo "Operating system is not \"Linux\""
-    echo "Exiting..."
+read -p "Do you want to install All of the configs? (y/n) " -n 1 -r
+    echo    
+    if [[ $REPLY =~ ^[Yy]$ ]]
+    then
+    bash ./*/install.sh
+    fi
 fi

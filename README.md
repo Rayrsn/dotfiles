@@ -5,6 +5,7 @@
 1. Fish
 1. BetterDiscord
 1. Firefox
+1. Scripts
 
 # Installation
 You can install all of the configs by running the following command:
@@ -24,3 +25,5 @@ bash install.sh
     * Arch: `firefox` `firefox-developer-edition`
       * You can choose not to install Firefox Developer Edition.
     * Ubuntu: `firefox` **or** `firefox-developer-edition`
+
+* For installing Scripts see [Scripts](./Scripts/)

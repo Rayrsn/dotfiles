@@ -3,6 +3,8 @@
 1. Awesome
 1. FastFetch
 1. Fish
+1. BetterDiscord
+1. Firefox
 
 # Installation
 You can install all of the configs by running the following command:

@@ -22,4 +22,5 @@ bash install.sh
 * For installing Firefox and/or Firefox Developer Edition see [Firefox](./Firefox)
   * Packages that get installed:
     * Arch: `firefox` `firefox-developer-edition`
+      * You can choose not to install Firefox Developer Edition.
     * Ubuntu: `firefox` **or** `firefox-developer-edition`

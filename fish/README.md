@@ -1,9 +1,9 @@
 # Fish Configs
 To install simply run 
 ```bash
-chmod +x ./fishsetup.sh && ./fishsetup.sh
+bash ./install.sh
 ```
 alternatively if you don't want to see the (yes/no) prompts you can run
 ```bash
-chmod +x ./fishsetup.sh && ./fishsetup.sh --noconfirm
+bash ./install.sh --noconfirm
 ```
